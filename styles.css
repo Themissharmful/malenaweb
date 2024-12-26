@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Contenedor general del slider */
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px; /* Ajusta según tu gusto */
+    margin: 20px auto;
+    overflow: hidden; /* Oculta el contenido que se salga del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Cinta de diapositivas */
+  .slides {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  
+  /* Cada diapositiva */
+  .slide {
+    flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ajusta la imagen SVG */
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Botones de navegación */
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.7);
+  }
+  
