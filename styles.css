@@ -1,31 +1,40 @@
 /* styles.css */
 
-/* Contenedor general del slider */
-.slider {
-    position: relative;
-    width: 80%;
-    max-width: 800px; /* Ajusta según tu gusto */
-    margin: 20px auto;
-    overflow: hidden; /* Oculta el contenido que se salga del contenedor */
-    border-radius: 8px;
+/* Ajustes básicos de la página (opcional) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f0f0f0;
+  }
+  
+  /* Contenedor del carrusel */
+  .slider {
+    position: relative; 
+    width: 80%;          /* Ajusta según tu preferencia */
+    max-width: 800px;    /* Ancho máximo */
+    margin: 40px auto;   /* Centra horizontalmente */
+    overflow: hidden;    /* Oculta contenido que se sale */
+    border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
   }
   
   /* Cinta de diapositivas */
   .slides {
-    display: flex;
-    transition: transform 0.4s ease;
+    display: flex; 
+    transition: transform 0.4s ease; 
   }
   
-  /* Cada diapositiva */
+  /* Cada "slide" ocupa 100% del contenedor */
   .slide {
-    flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho */
+    flex: 0 0 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  /* Ajusta la imagen SVG */
+  /* Ajustamos la imagen SVG al 100% del ancho del slide */
   .slide img {
     width: 100%;
     height: auto;
@@ -50,11 +59,13 @@
   .prev {
     left: 10px;
   }
+  
   .next {
     right: 10px;
   }
   
-  .prev:hover, .next:hover {
+  .prev:hover,
+  .next:hover {
     background-color: rgba(0,0,0,0.7);
   }
   
